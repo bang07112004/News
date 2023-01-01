@@ -1,7 +1,7 @@
 import fetchNews from "../../lib/fetchNews"
 import NewsList from "../NewsList"
 type Props = {
-    searchParams: {term: string},
+    searchParams?: {term: string},
 }
 async function page({searchParams}: Props) {
     const news: NewsResponse = await fetchNews(
